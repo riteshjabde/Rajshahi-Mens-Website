@@ -1,0 +1,182 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#e6e0d7;
+    color:#111;
+}
+
+/* Navbar */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 60px;
+}
+
+.logo img{
+    width:200px;
+    height:auto;
+    display:block;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:60px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#111;
+    font-size:20px;
+    font-weight:500;
+}
+
+.menu-btn{
+    font-size:32px;
+    cursor:pointer;
+}
+
+/* Hero */
+.hero{
+    padding:20px 50px;
+}
+
+.hero-container{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    border:2px solid #666;
+    border-radius:40px;
+    overflow:hidden;
+    background:#f3eee8;
+}
+
+
+.hero-content{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.hero-content h3{
+    font-size:38px;
+    color:#7a4a00;
+}
+
+.hero-content h1{
+    font-size:72px;
+    color:#7a4a00;
+}
+
+.hero-content h2{
+    font-size:50px;
+    color:#7a4a00;
+}
+
+.hero-content img{
+    width:120px;
+    margin:40px 0 10px;
+}
+
+.brand{
+    font-size:55px !important;
+    letter-spacing:2px;
+}
+
+/* Development Section */
+.development{
+    margin-top:50px;
+    background:#000;
+    padding:60px 0;
+}
+
+.overlay{
+    text-align:center;
+}
+
+.overlay img{
+    width:90%;
+    border-radius:10px;
+}
+
+.overlay button{
+    margin-top:25px;
+    padding:15px 50px;
+    border:none;
+    border-radius:30px;
+    font-size:22px;
+    cursor:pointer;
+    background:white;
+    font-weight:600;
+}
+
+/* Footer */
+footer{
+    display:flex;
+    justify-content:space-between;
+    padding:80px 60px;
+}
+
+.footer-left img{
+    width:280px;
+    height:auto;
+    display:block;
+    margin-bottom:15px;
+}
+.footer-left p{
+    font-size:19px;
+}
+.footer-left h2{
+    margin-top:10px;
+}
+
+.address{
+    margin-top:40px;
+    line-height:2;
+}
+
+.footer-right{
+    text-align:left;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.footer-right h2{
+    margin-bottom:30px;
+    font-size:30px;
+}
+
+.footer-right p{
+    font-size:22px;
+    margin-bottom:20px;
+}
+
+/* Responsive */
+@media(max-width:900px){
+
+    .navbar{
+        padding:20px;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero-container{
+        grid-template-columns:1fr;
+    }
+
+    footer{
+        flex-direction:column;
+        gap:50px;
+    }
+
+    .hero-content h1{
+        font-size:48px;
+    }
+}
