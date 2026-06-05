@@ -59,13 +59,14 @@ body{
     background:#f3eee8;
 }
 
-
+*/
 
 .hero-content img{
-    width:120px;
+    width:100px;
+    height:auto;
     margin:40px 0 10px;
 }
-*/
+
 
 .brand{
     font-size:55px !important;
