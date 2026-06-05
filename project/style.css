@@ -41,6 +41,9 @@ body{
     font-size:32px;
     cursor:pointer;
 }
+.hero{
+    padding:20px 50px;
+}
 
 /* Hero 
 .hero{
