@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rajshahi Mens</title>
+    <title>Rajshahi Mens | The Future of Menswear</title>
+    
+    <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
@@ -15,62 +20,290 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img src="images/logo.png" alt="Rajshahi Logo">
+                <a href="#"><img src="images/logo.png" alt="Rajshahi Logo"></a>
             </div>
 
             <ul class="nav-links">
-                <li><a href="#">ETHNIC</a></li>
-                <li><a href="#">CASUALS</a></li>
-                <li><a href="#">FORMALS</a></li>
-                <li><a href="#">ACCESSORIES</a></li>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#pre-launch">Pre-Launch</a></li>
             </ul>
 
-            <div class="menu-btn">
-                ☰
+            <div class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars-staggered"></i>
             </div>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-container">
+    <!-- Mobile Nav Drawer -->
+    <div class="nav-links-mobile" id="mobileNav">
+        <a href="#" class="mobile-link">Home</a>
+        <a href="#collections" class="mobile-link">Collections</a>
+        <a href="#pre-launch" class="mobile-link">Pre-Launch</a>
+    </div>
 
-            <div class="hero-image">
-                <img src="images/banner.jpg" alt="Ethnic Wear">
+    <!-- Hero Section -->
+    <section class="hero reveal">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">Next-Gen Tailoring</div>
+                <h1 class="hero-title">Elevate Your Presence With <span>Rajshahi Mens</span></h1>
+                <p class="hero-description">
+                    Fusing time-honored Indian craftsmanship with cutting-edge futuristic styling. Explore our premium curation of menswear engineered for the modern visionary.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary" onclick="location.href='#collections'">Explore Collections</button>
+                    
+                </div>
             </div>
 
+            <div class="hero-image-wrapper">
+                <!-- HUD Tech Corners -->
+                <div class="hud-corner hc-tl"></div>
+                <div class="hud-corner hc-tr"></div>
+                <div class="hud-corner hc-bl"></div>
+                <div class="hud-corner hc-br"></div>
+                <div class="hero-image-container">
+                    <img src="images/banner.jpg" alt="Rajshahi Mens Banner Fashion">
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Under Development Section -->
-    <section class="development">
-        <div class="overlay">
-            <img src="images/under.jpg" alt="Products">
+    <!-- Collections Portal Grid -->
+    <section class="collections-section reveal" id="collections">
+        <div class="section-header">
+            <span class="section-subtitle">The Catalog Matrix</span>
+            <h2 class="section-title">Exclusive Collections</h2>
+        </div>
 
-            <button>Under Development</button>
+        <div class="collections-grid">
+            <!-- Ethnic Card -->
+            <div class="collection-card">
+                <span class="card-num">ETH</span>
+                <img src="images/ethnic.jpeg" alt="Ethnic Collection" class="collection-image" />
+                <div class="collection-card-bg"></div>
+                <div class="collection-card-content">
+                    <span class="collection-type-badge">Traditional Wear</span>
+                    <h3>ETHNIC</h3>
+                    <p>Royal sherwanis, kurtas, and traditional wear designed for celebration.</p>
+                </div>
+            </div>
+
+            <!-- Casuals Card -->
+            <div class="collection-card">
+                <span class="card-num">CAS</span>
+                <img src="images/casuals.jpeg" alt="Casuals Collection" class="collection-image" />
+                <div class="collection-card-bg"></div>
+                <div class="collection-card-content">
+                    <span class="collection-type-badge">Everyday Luxury</span>
+                    <h3>CASUALS</h3>
+                    <p>High-end comfort shirts, denims, and everyday luxury essentials.</p>
+                </div>
+            </div>
+
+            <!-- Formals Card -->
+            <div class="collection-card">
+                <span class="card-num">FOR</span>
+                <img src="images/formals2.jpeg" alt="Formals Collection" class="collection-image" />
+                <div class="collection-card-bg"></div>
+                <div class="collection-card-content">
+                    <span class="collection-type-badge">Business Attire</span>
+                    <h3>FORMALS</h3>
+                    <p>Sharp bespoke suits, blazers, and corporate armor for executive impact.</p>
+                </div>
+            </div>
+
+            <!-- Accessories Card -->
+            <div class="collection-card">
+                <span class="card-num">ACC</span>
+                <img src="images/accessories.jpeg" alt="Accessories Collection" class="collection-image" />
+                <div class="collection-card-bg"></div>
+                <div class="collection-card-content">
+                    <span class="collection-type-badge">Signature Accents</span>
+                    <h3>ACCESSORIES</h3>
+                    <p>Curated leather footwear, custom cufflinks, and signature accents.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Under Development / Portal Section -->
+    <section class="development reveal" id="pre-launch">
+        <div class="development-container">
+            <div class="dev-grid">
+                <div class="dev-content">
+                    <div class="dev-badge"><i class="fa-solid fa-circle-nodes"></i> Alpha Protocol</div>
+                    <h2 class="dev-title">Digital Fitting Room & Online Catalog Currently Under Development</h2>
+                    <p class="dev-desc">
+                        Our technical department is building an interactive virtual dressing terminal. Soon you will be able to custom-configure details and check fits using neural-design preview interfaces.
+                    </p>
+                    <div class="hud-metrics">
+                        <div class="metric">
+                            <span class="metric-label">STATUS</span>
+                            <span class="metric-value">INTEGRATION RUNNING</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">PRE-LAUNCH LIVE</span>
+                            <span class="metric-value">IN PROGRESS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dev-image-wrapper">
+                    <!-- HUD Tech Corners -->
+                    <div class="hud-corner hc-tl"></div>
+                    <div class="hud-corner hc-tr"></div>
+                    <div class="hud-corner hc-bl"></div>
+                    <div class="hud-corner hc-br"></div>
+                    <img src="images/under.jpg" alt="Under Construction Tech Concept">
+                    <button class="dev-overlay-btn">Initializing Portal...</button>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-left">
-            <img src="images/raj-logo.png" alt="Logo">
+        <div class="footer-grid">
+            <div class="footer-left">
 
+                <img src="images/raj-logo.png" alt="Rajshahi Premium Logo" class="footer-logo">
+                <p>RAJAN RAMANLAL JABADE</p>
+                <p>27AJHPJ0751D1ZK</p>
+                <p>Establishing stylistic dominance. Redefining modern identity with premium heritage textiles.</p>
+                
+                <address class="footer-address">
+                    <p><i class="fa-solid fa-location-dot" style="color: var(--accent-gold); margin-right: 10px;"></i> AKLUJ, C S NO 2260/29,</p>
+                    <p> SADUBHAU MARKET, TALMALSHIRAS,</p>
+                    <p>AKLUJ - 413101, Solapur,
 
-            <div class="address">
-                <p>Near Udayratna Township,</p>
-                <p>Sadhubhau Chowk,</p>
-                <p>Akluj - 413101</p>
+Maharashtra,India
+                    </p>
+                </address>
+            </div>
+
+            <div class="footer-mid">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#collections">Collections</a></li>
+                    
+                    <li><a href="#pre-launch">Pre-Launch Portal</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-right">
+                <h3>Contact Terminal</h3>
+                <div class="contact-info">
+                    <a href="tel:+919607101505" class="contact-item">
+                        <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                        <span>+91 9607101505</span>
+                    </a>
+                    <a href="tel:+919146101505" class="contact-item">
+                        <span class="icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
+                        <span>+91 9146101505</span>
+                    </a>
+                    <a href="https://instagram.com/rajshahi_mens" target="_blank" class="contact-item">
+                        <span class="icon"><i class="fa-brands fa-instagram"></i></span>
+                        <span>@rajshahi_mens</span>
+                    </a>
+                </div>
             </div>
         </div>
 
-        <div class="footer-right">
-            <h2>CONTACT US</h2>
-
-            <p>📞 +91 9607101505 | 9146101505</p>
-            <p>📸 rajshahi_mens</p>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Rajshahi Mens. All rights reserved. Precision Tailored.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Protocol</a>
+                <a href="#">Terms of Access</a>
+            </div>
         </div>
     </footer>
+
+    <!-- Interactive Navigation and Scroll Reveal Script -->
+    <script>
+        // Mobile Drawer Toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileNav = document.getElementById('mobileNav');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+            const icon = menuBtn.querySelector('i');
+            if (mobileNav.classList.contains('active')) {
+                icon.className = 'fa-solid fa-xmark';
+            } else {
+                icon.className = 'fa-solid fa-bars-staggered';
+            }
+        });
+
+        // Close Mobile Menu on Click
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('active');
+                menuBtn.querySelector('i').className = 'fa-solid fa-bars-staggered';
+            });
+        });
+
+        // Header Background on Scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.padding = '10px 40px';
+                header.style.backgroundColor = 'rgba(4, 5, 7, 0.95)';
+            } else {
+                header.style.padding = '15px 40px';
+                header.style.backgroundColor = 'var(--bg-nav)';
+            }
+        });
+
+        // Intersection Observer for Futuristic Scroll Reveal
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealOptions = {
+            threshold: 0.15,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, revealOptions);
+
+        revealElements.forEach(el => {
+            revealObserver.observe(el);
+        });
+
+        // Active Link Highlighting
+        const sections = document.querySelectorAll('section');
+        const navAnchorLinks = document.querySelectorAll('.nav-links a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop - 120) {
+                    current = section.getAttribute('id') || '';
+                }
+            });
+
+            navAnchorLinks.forEach(a => {
+                a.classList.remove('active');
+                if (current === '' && a.getAttribute('href') === '#') {
+                    a.classList.add('active');
+                } else if (a.getAttribute('href') === `#${current}`) {
+                    a.classList.add('active');
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
